@@ -5,6 +5,7 @@ public class CubeRoot
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         double y = sc.nextDouble();
+        sc.close();
         double x = 0;
         double i = 0.5;
         System.out.println(cube(x, y, i));
