@@ -8,13 +8,9 @@ pb = x[random.randint(0, 12)]
 y = 0
 
 def ud(v):
-    if v == "J" or v == "Q" or v == "K":
+    if v == "J" or "Q" or "K" or "0" or "9" or "8":
         return "up"
-    elif v == "0" or v == "9" or v == "8":
-        return "up"
-    elif v == "2" or v == "3" or v == "4":
-        return "down"
-    elif v == "A" or v == "5" or v == "6" or v == "7":
+    elif v == "2" or "3" or "4" or "A" or "5" or "6" or "7":
         return "down"
 
 def ten(w):
