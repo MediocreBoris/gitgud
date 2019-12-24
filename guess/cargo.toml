@@ -1,0 +1,12 @@
+[package]
+name = "guessing_game"
+version = "0.1.0"
+authors = ["Boris <borisblanke128@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+rand = "0.7.2"
+
+[[bin]]
+name = "main"
+path = "main.rs"
