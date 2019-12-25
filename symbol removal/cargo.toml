@@ -1,0 +1,9 @@
+[package]
+name = "symbol_removal"
+version = "0.1.0"
+authors = ["Boris <borisblanke128@protonmail.com>"]
+edition = "2018"
+
+[[bin]]
+name = "main"
+path = "main.rs"
