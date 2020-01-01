@@ -17,7 +17,6 @@ fn main(){
 }
 
 fn bezout(a: i64, b: i64, d: i64){
-    //needs to be finished to get all Bezout Identities
     let f = (b / d).abs();
     let g = (a / d).abs();
     let mut x = -f;
