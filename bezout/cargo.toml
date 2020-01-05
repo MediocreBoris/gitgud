@@ -1,5 +1,5 @@
 [package]
-name = "heap_sort"
+name = "bezout"
 version = "0.1.0"
 authors = ["Boris <borisblanke128@protonmail.com>"]
 edition = "2018"
