@@ -87,10 +87,6 @@ fn solve(b: &mut Vec<Node>, x: usize, n: u8) -> bool{
     c
 }
 
-fn test(b: &mut Vec<Node>){
-    let g = b;
-}
-
 fn confirm(b: &mut Vec<Node>) -> bool{
     for i in 0..64{
         if b[i].num == 0{
