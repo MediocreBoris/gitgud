@@ -19,11 +19,12 @@ def solve(a, x, y, n, m, b):
             elif a[h][g] == n:
                 if solve(a, h, g, n + 1, m + 1, b):
                     return True
-    if n != a.shape[0] * a.shape[1] + 1:
+
+    if n == a.shape[0] * a.shape[1] + 1:
+        return True
+    else:
         if back(a[x][y], b):
             a[x][y] = 0
-    else:
-        return True
 
 def distance(n, m):
     x = abs(n[1] - m[1]) + abs(n[2] - m[2])
@@ -118,7 +119,7 @@ try:
             break
         r = array(list(map(int, r.split())))
         if sure(r, b):
-            b = np.append(b, [r], axis=0)
+            b = np.append(b, [[r[0], r[1] - 1, r[2] - 1]], axis=0)
         a[r[1] - 1][r[2] - 1] = r[0]
     b = b[b[:,0].argsort()]
     if not check(b, a.shape, b.shape[0]):
