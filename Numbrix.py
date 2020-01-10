@@ -44,30 +44,6 @@ def back(x, b):
         if x == b[i][0]:
             return False
     return True
-
-def confirm(a):
-    xa = a.shape
-    for i in range(0, xa[0]):
-        for j in range(0, xa[1]):
-            mi = False
-            ma = False
-            for k in range(0, 4):
-                x = i + c[k][0]
-                y = j + c[k][1]
-                if -1 < x < xa[0] and -1 < y < xa[1]:
-                    r = a[i][j] - a[x][y]
-                    if r == -1:
-                        mi = True
-                    elif r == 1:
-                        ma = True
-            if ma and mi:
-                break
-            elif a[i][j] == 64 and ma:
-                break
-            elif a [i][j] == 1 and mi:
-                break
-            return False
-    return True
                     
 def one(a):
     xa = a.shape
