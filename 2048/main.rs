@@ -9,7 +9,7 @@ fn main(){
         if a{
             for i in 0..4{
                 let i = 3 - i;
-                println!("{:4}  {:4}  {:4}  {:4}", y[i][0], y[i][1], y[i][2], y[i][3]);
+                println!("{:5} {:5} {:5} {:5}", y[i][0], y[i][1], y[i][2], y[i][3]);
                 a = false;
             }
         }
