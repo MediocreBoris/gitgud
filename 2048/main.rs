@@ -148,6 +148,7 @@ fn make(y: &mut [[i64; 4]; 4], f: usize) -> [[i64; 4]; 4]{
                             mov(y, i, (j + 1) as usize, m, n, f);
                         }
                     }
+                    t = true;
                 }
                 else{
                     break;
@@ -172,6 +173,7 @@ fn make(y: &mut [[i64; 4]; 4], f: usize) -> [[i64; 4]; 4]{
                             mov(y, i, (j + 1) as usize, m, n, f);
                         }
                     }
+                    t = true;
                 }
                 else{
                     break;
