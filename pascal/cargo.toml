@@ -1,0 +1,12 @@
+[package]
+name = "pascal"
+version = "0.1.0"
+authors = ["Boris <borisblanke128@protonmail.com>"]
+edition = "2018"
+
+[dependencies]
+
+
+[[bin]]
+name = "main"
+path = "main.rs"
