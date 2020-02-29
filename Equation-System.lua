@@ -24,7 +24,7 @@ function parse(s)
         ::skip::
     end
     if l[1] ~= nil then
-        t[#t + 1] = l[1]
+        t[#t + 1] = l[1] * sign(l[3])
     end
     return t
 end
